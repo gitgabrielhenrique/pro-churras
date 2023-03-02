@@ -6,7 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+cara= 'assets/cara.png';
+coroa= 'assets/coroa.png';
+logo='assets/logo.png';
+image= this.logo;
+info='Clique no botão para jogar';
 
   constructor() {}
+
+  jogarmoeda(){
+    if(Math.random()<0.5){
+this.image=this.cara;
+this.info="cara"
+
+    }else{
+      this.image=this.coroa;
+      this.info="coroa"
+    }
+  }
 
 }
