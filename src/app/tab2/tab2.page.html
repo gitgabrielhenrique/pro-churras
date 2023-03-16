@@ -8,29 +8,42 @@
 
 <ion-content [fullscreen]="true">
 <ion-toolbar>
-  <ion-title class="ion-text-center">Valendo:</ion-title>
+  <ion-title class="ion-text-center">Valendo:{{valendo}}</ion-title>
 </ion-toolbar>
 <ion-grid>
   <ion-row>
 
   <ion-col class="c1">
-    1
+    <ion-button (click)="mudarpeso(1)">
+1
+    </ion-button>
+
   </ion-col>
 
   <ion-col class="c1">
-    3
+    <ion-button (click)="mudarpeso(3)">
+      3
+          </ion-button>
+
   </ion-col>
 
   <ion-col class="c1">
-    6
+    <ion-button (click)="mudarpeso(6)">
+      6
+          </ion-button>
+
   </ion-col>
 
   <ion-col class="c1">
-    9
+    <ion-button (click)="mudarpeso(9)">
+      9
+          </ion-button>
   </ion-col>
 
   <ion-col class="c1">
-    12
+    <ion-button (click)="mudarpeso(12)">
+      12
+          </ion-button>
   </ion-col>
 
   </ion-row>
@@ -55,7 +68,7 @@
 <ion-row>
 <ion-col class="c2">
 
-  <ion-button>
+  <ion-button (click)="somarplacart1()">
     +
   </ion-button>
 
@@ -63,7 +76,7 @@
 
 <ion-col class="c2">
 
-  <ion-button>
+  <ion-button (click)="somarplacart2()">
     +
   </ion-button>
 
@@ -72,23 +85,23 @@
 
 
 <ion-row >
-  <ion-col class="c2">
-0
+  <ion-col>
+    {{placart1}}
   </ion-col>
-  <ion-col class="c2">
-    0
+  <ion-col>
+    {{placart2}}
       </ion-col>
 
 </ion-row>
 <ion-row>
   <ion-col class="c2">
-    <ion-button>
+    <ion-button (click)="diminuir_placart1()">
       -
     </ion-button>
   </ion-col>
 
   <ion-col class="c2">
-    <ion-button>
+    <ion-button (click)="diminuir_placart2()">
       -
     </ion-button>
   </ion-col>
