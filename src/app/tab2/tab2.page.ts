@@ -30,11 +30,16 @@ this.totalt1+=1;
 
 
 
+
+
  }
 
  diminuir_placart1(){
 this.placart1-=this.valendo
+if(this.placart1<0){
+  this.placart1=0
 
+  }
  }
 
  somarplacart2(){
@@ -50,6 +55,11 @@ this.totalt2+=1;
 
    diminuir_placart2(){
   this.placart2-=this.valendo
+
+  if(this.placart2<0){
+    this.placart2=0
+
+    }
 
    }
 

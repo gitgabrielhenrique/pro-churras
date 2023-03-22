@@ -120,19 +120,19 @@
   </ion-row>
 
   <ion-row>
-<ion-col>
+<ion-col class="c3">
   time 1
 </ion-col>
-<ion-col>
+<ion-col class="c3">
   {{totalt1}}
 </ion-col>
   </ion-row>
 
   <ion-row>
-    <ion-col>
+    <ion-col class="c3">
       time 2
     </ion-col>
-    <ion-col>
+    <ion-col class="c3">
       {{totalt2}}
     </ion-col>
       </ion-row>
@@ -150,5 +150,8 @@
 
 </ion-content>
 <ion-footer>
-  <ion-title class="ion-text-center" (click)="limpar()">Limpar</ion-title>
+  <ion-toolbar (click)="limpar()" class="btn" color="dark">
+    <ion-title class="ion-text-center">limpar</ion-title>
+  </ion-toolbar>
+
 </ion-footer>
