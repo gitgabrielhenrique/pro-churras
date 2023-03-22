@@ -13,34 +13,34 @@
 <ion-grid>
   <ion-row>
 
-  <ion-col class="c1">
+  <ion-col >
     <ion-button (click)="mudarpeso(1)">
 1
     </ion-button>
 
   </ion-col>
 
-  <ion-col class="c1">
+  <ion-col >
     <ion-button (click)="mudarpeso(3)">
       3
           </ion-button>
 
   </ion-col>
 
-  <ion-col class="c1">
+  <ion-col >
     <ion-button (click)="mudarpeso(6)">
       6
           </ion-button>
 
   </ion-col>
 
-  <ion-col class="c1">
+  <ion-col >
     <ion-button (click)="mudarpeso(9)">
       9
           </ion-button>
   </ion-col>
 
-  <ion-col class="c1">
+  <ion-col >
     <ion-button (click)="mudarpeso(12)">
       12
           </ion-button>
@@ -124,7 +124,7 @@
   time 1
 </ion-col>
 <ion-col>
-  0
+  {{totalt1}}
 </ion-col>
   </ion-row>
 
@@ -133,7 +133,7 @@
       time 2
     </ion-col>
     <ion-col>
-      0
+      {{totalt2}}
     </ion-col>
       </ion-row>
 
@@ -150,5 +150,5 @@
 
 </ion-content>
 <ion-footer>
-  <ion-title class="ion-text-center">Limpar</ion-title>
+  <ion-title class="ion-text-center" (click)="limpar()">Limpar</ion-title>
 </ion-footer>
